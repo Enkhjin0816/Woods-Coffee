@@ -1,11 +1,10 @@
 import { View, Text } from 'react-native';
+import Box from './box';
 
 export const HomeScreen = () => {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>
-        Home!
-      </Text>
+    <View>
+      <Box height={100} width={1000} background='black'></Box>
     </View>
   );
 }
