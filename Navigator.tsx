@@ -1,7 +1,7 @@
 import { Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Hicon, Picon, Oicon, Sicon } from './assets/icons';
+import { Homeicon, Profileicon, Ordericon, Scanicon } from './assets/icons';
 import { HomeScreen } from './screens/Home';
 import { ScanScreen } from './screens/Scan';
 import { OrderScreen } from './screens/Order';
@@ -19,7 +19,7 @@ const Navigator = () => {
           ),
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <Hicon color={focused ? '#D3A762' : '#838383'} width={24} height={24} />
+            <Homeicon color={focused ? '#D3A762' : '#838383'} width={24} height={24} />
           ),
         }}
         />
@@ -29,7 +29,7 @@ const Navigator = () => {
           ),
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <Sicon color={focused ? '#D3A762' : '#838383'} width={24} height={24} />
+            <Scanicon color={focused ? '#D3A762' : '#838383'} width={24} height={24} />
           ),
         }}
         />
@@ -39,7 +39,7 @@ const Navigator = () => {
           ),
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <Oicon color={focused ? '#D3A762' : '#838383'} width={24} height={24} />
+            <Ordericon color={focused ? '#D3A762' : '#838383'} width={24} height={24} />
           ),
         }}
         />
@@ -49,7 +49,7 @@ const Navigator = () => {
           ),
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <Picon color={focused ? '#D3A762' : '#838383'} width={24} height={24} />
+            <Profileicon color={focused ? '#D3A762' : '#838383'} width={24} height={24} />
           ),
         }}
         />

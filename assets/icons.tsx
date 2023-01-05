@@ -1,7 +1,7 @@
 
 import Svg, { G, Path } from 'react-native-svg'
 
-export const Hicon = ({width, height, color}: any) => {
+export const Homeicon = ({width, height, color}: any) => {
     return (
         <Svg
             width={width}
@@ -18,7 +18,7 @@ export const Hicon = ({width, height, color}: any) => {
         </Svg>
     )
 }
-export const Sicon = ({width, height, color}: any) => {
+export const Scanicon = ({width, height, color}: any) => {
     return (
         <Svg
             width={width}
@@ -36,7 +36,7 @@ export const Sicon = ({width, height, color}: any) => {
     )
 }
 
-export const Oicon = ({width, height, color}: any) => {
+export const Ordericon = ({width, height, color}: any) => {
     return (
         <Svg
             width={width}
@@ -54,7 +54,7 @@ export const Oicon = ({width, height, color}: any) => {
     )
 }
 
-export const Picon = ({width, height, color}: any) => {
+export const Profileicon = ({width, height, color}: any) => {
     return (
         <Svg
             width={width}
@@ -66,6 +66,29 @@ export const Picon = ({width, height, color}: any) => {
                 <Path
                     d='M4 22C4 19.8783 4.84285 17.8434 6.34315 16.3431C7.84344 14.8429 9.87827 14 12 14C14.1217 14 16.1566 14.8429 17.6569 16.3431C19.1571 17.8434 20 19.8783 20 22H18C18 20.4087 17.3679 18.8826 16.2426 17.7574C15.1174 16.6321 13.5913 16 12 16C10.4087 16 8.88258 16.6321 7.75736 17.7574C6.63214 18.8826 6 20.4087 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z'
                     fill={color}
+                />
+            </G>
+        </Svg>
+    )
+}
+
+export const Bagicon = ({width, height, color}: any) => {
+    return (
+        <Svg
+            width={width}
+            height={height}
+            viewBox='0 0 20 20'
+        >
+            <G>
+                <Path
+                    d='M5 6.25391H15.6367V15.5997C15.6367 16.7043 14.7413 17.5997 13.6367 17.5997H7C5.89543 17.5997 5 16.7043 5 15.5997V6.25391Z'
+                    stroke={color}
+                    strokeWidth={2}
+                />
+                <Path
+                    d='M7.12744 5.19101C7.12744 3.42866 8.55611 2 10.3185 2V2C12.0808 2 13.5095 3.42866 13.5095 5.19101V6.25468H7.12744V5.19101Z'
+                    stroke={color}
+                    strokeWidth={2}
                 />
             </G>
         </Svg>
