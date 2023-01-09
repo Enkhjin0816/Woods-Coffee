@@ -1,3 +1,4 @@
+import React from "react";
 import { ScrollView, Text, TouchableOpacity, View } from "react-native"
 import { Image } from "react-native";
 import CustomText from "./text";
@@ -15,12 +16,12 @@ const Group = ({name, price, img, ml, mr}: any) => {
     )
 }
 
-const Banner = ({ml, mr, mt}: any) => {
+const Banner = ({ml, mr, mt, mb, data}: any) => {
     return(
-        <ScrollView style={{marginLeft: ml, marginRight: mr, marginTop: mt}} horizontal={true} showsHorizontalScrollIndicator={false}>
-            <Group name={'Hot Chocolate'} price={'$3.12 / spruce'} img={img1} />
-            <Group ml={12} name={'Hot Chocolate'} price={'$3.12 / spruce'} img={img2} />
-            <Group ml={12} mr={12} name={'Hot Chocolate'} price={'$3.12 / spruce'} img={img3} />
+        <ScrollView style={{marginBottom: mb, marginLeft: ml, marginRight: mr, marginTop: mt}} horizontal={true} showsHorizontalScrollIndicator={false}>
+            {data.map((product: any) => (
+                <Group ml={product.ml} mr={product.mr} name={product.name} price={product.price} img={product.img} />
+            ))}
         </ScrollView>
     )
 }
