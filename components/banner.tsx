@@ -1,10 +1,5 @@
 import React from "react";
-import { ScrollView, Text, TouchableOpacity, View } from "react-native"
-import { Image } from "react-native";
-import CustomText from "./text";
-import img1 from '../assets/img1.png';
-import img2 from '../assets/img2.png';
-import img3 from '../assets/img3.png';
+import { ScrollView } from "react-native"
 import Card from "./card";
 
 const Banner = ({ml, mr, mt, mb, data}: any) => {

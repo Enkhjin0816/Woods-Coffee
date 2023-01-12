@@ -1,5 +1,5 @@
-import { Image, ScrollView, Text, View } from 'react-native';
-import Box from '../components/box';
+import React from 'react';
+import { Button, Image, ScrollView, View } from 'react-native';
 import { Header } from '../components/header';
 import CustomText from '../components/text';
 import Banner from '../components/banner';
@@ -15,20 +15,19 @@ import coffee5 from '../assets/coffee5.png';
 import coffee6 from '../assets/coffee6.png';
 import NavBar from '../components/navBar';
 import Card from '../components/card';
-import drinks from '../drinks.json';
 
 const Special = () => {
   return (
-    <View style={{ display: 'flex', flexDirection: 'column', marginLeft: 20}}>
-      <View style={{ display: 'flex', flexDirection: 'row', marginTop: 34}}>
+    <View style={{ display: 'flex', flexDirection: 'column', marginLeft: 20 }}>
+      <View style={{ display: 'flex', flexDirection: 'row', marginTop: 34 }}>
         <Card name='Hot Choco' price='$3.12 / spruce' img={coffee1} />
         <Card ml={'8%'} name='Choco' price='$3.12 / spruce' img={coffee2} />
       </View>
-      <View style={{ display: 'flex', flexDirection: 'row', marginTop: 34}}>
+      <View style={{ display: 'flex', flexDirection: 'row', marginTop: 34 }}>
         <Card name='Toffee Nut Macchi...' price='$3.12 / spruce' img={coffee3} />
         <Card ml={'8%'} name='Choco' price='$3.12 / spruce' img={coffee4} />
       </View>
-      <View style={{ display: 'flex', flexDirection: 'row', marginTop: 34}}>
+      <View style={{ display: 'flex', flexDirection: 'row', marginTop: 34 }}>
         <Card name='Hot Choco' price='$3.12 / spruce' img={coffee5} />
         <Card ml={'8%'} name='Iced Pineapple Ma..' price='$3.12 / spruce' img={coffee6} />
       </View>
