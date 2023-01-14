@@ -18,18 +18,56 @@ import Card from '../components/card';
 
 const Special = () => {
   return (
-    <View style={{ display: 'flex', flexDirection: 'column', marginLeft: 20 }}>
-      <View style={{ display: 'flex', flexDirection: 'row', marginTop: 34 }}>
+    <View style={{ display: 'flex', flexDirection: 'column' }}>
+      <View style={{ display: 'flex', flexDirection: 'row', marginTop: 34, width: '100%', justifyContent: 'space-around' }}>
         <Card name='Hot Choco' price='$3.12 / spruce' img={coffee1} />
-        <Card ml={'8%'} name='Choco' price='$3.12 / spruce' img={coffee2} />
+        <Card name='Choco' price='$3.12 / spruce' img={coffee2} />
       </View>
-      <View style={{ display: 'flex', flexDirection: 'row', marginTop: 34 }}>
+      <View style={{ display: 'flex', flexDirection: 'row', marginTop: 34, width: '100%', justifyContent: 'space-around' }}>
         <Card name='Toffee Nut Macchi...' price='$3.12 / spruce' img={coffee3} />
-        <Card ml={'8%'} name='Choco' price='$3.12 / spruce' img={coffee4} />
+        <Card name='Choco' price='$3.12 / spruce' img={coffee4} />
       </View>
-      <View style={{ display: 'flex', flexDirection: 'row', marginTop: 34 }}>
+      <View style={{ display: 'flex', flexDirection: 'row', marginTop: 34, width: '100%', justifyContent: 'space-around' }}>
         <Card name='Hot Choco' price='$3.12 / spruce' img={coffee5} />
-        <Card ml={'8%'} name='Iced Pineapple Ma..' price='$3.12 / spruce' img={coffee6} />
+        <Card name='Iced Pineapple Ma..' price='$3.12 / spruce' img={coffee6} />
+      </View>
+    </View>
+  )
+}
+
+const Hot = () => {
+  return (
+    <View style={{ display: 'flex', flexDirection: 'column' }}>
+      <View style={{ display: 'flex', flexDirection: 'row', marginTop: 34, width: '100%', justifyContent: 'space-around' }}>
+        <Card name='Hot Choco' price='$3.12 / spruce' img={coffee5} />
+        <Card name='Iced Pineapple Ma..' price='$3.12 / spruce' img={coffee6} />
+      </View>
+      <View style={{ display: 'flex', flexDirection: 'row', marginTop: 34, width: '100%', justifyContent: 'space-around' }}>
+        <Card name='Toffee Nut Macchi...' price='$3.12 / spruce' img={coffee3} />
+        <Card name='Choco' price='$3.12 / spruce' img={coffee4} />
+      </View>
+      <View style={{ display: 'flex', flexDirection: 'row', marginTop: 34, width: '100%', justifyContent: 'space-around' }}>
+        <Card name='Hot Choco' price='$3.12 / spruce' img={coffee1} />
+        <Card name='Choco' price='$3.12 / spruce' img={coffee2} />
+      </View>
+    </View>
+  )
+}
+
+const Cold = () => {
+  return (
+    <View style={{ display: 'flex', flexDirection: 'column' }}>
+      <View style={{ display: 'flex', flexDirection: 'row', marginTop: 34, width: '100%', justifyContent: 'space-around' }}>
+        <Card name='Toffee Nut Macchi...' price='$3.12 / spruce' img={coffee3} />
+        <Card name='Choco' price='$3.12 / spruce' img={coffee4} />
+      </View>
+      <View style={{ display: 'flex', flexDirection: 'row', marginTop: 34, width: '100%', justifyContent: 'space-around' }}>
+        <Card name='Hot Choco' price='$3.12 / spruce' img={coffee1} />
+        <Card name='Choco' price='$3.12 / spruce' img={coffee2} />
+      </View>
+      <View style={{ display: 'flex', flexDirection: 'row', marginTop: 34, width: '100%', justifyContent: 'space-around' }}>
+        <Card name='Hot Choco' price='$3.12 / spruce' img={coffee5} />
+        <Card name='Iced Pineapple Ma..' price='$3.12 / spruce' img={coffee6} />
       </View>
     </View>
   )
@@ -57,7 +95,7 @@ export const HomeScreen = () => {
         <Banner data={favourite} ml={20} mt={20} />
         <CustomText mt={20} ml={20} weight={'500'} color={'black'} size={20} text={'Seasonal drinks'} />
         <Banner data={seasonal} ml={20} mt={20} />
-        <NavBar mt={30} special={Special} hot={Special} cold={Special} food={Special} blended={Special} />
+        <NavBar mt={30} special={Special} hot={Hot} cold={Cold} food={Special} blended={Special} />
         <CustomText mb={200} />
       </ScrollView>
     </View>
